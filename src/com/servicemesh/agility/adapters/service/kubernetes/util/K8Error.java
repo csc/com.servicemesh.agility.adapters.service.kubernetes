@@ -1,6 +1,5 @@
 /**
- *              Copyright (c) 2008-2013 ServiceMesh, Incorporated; All Rights Reserved
- *              Copyright (c) 2013-Present Computer Sciences Corporation
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
  */
 
 package com.servicemesh.agility.adapters.service.kubernetes.util;
@@ -72,9 +71,12 @@ public class K8Error implements Serializable
 
     private void append(String name, String value, StringBuilder sb)
     {
-        if (value != null) {
+        if (value != null)
+        {
             if (sb.length() > 0)
+            {
                 sb.append(", ");
+            }
             sb.append(name).append("=").append(value);
         }
     }

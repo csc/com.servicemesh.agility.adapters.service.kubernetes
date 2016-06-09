@@ -1,3 +1,7 @@
+/**
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
+ */
+
 import com.servicemesh.agility.api.AssetProperty;
 import com.servicemesh.agility.api.Link;
 import com.servicemesh.agility.api.ServiceInstance;

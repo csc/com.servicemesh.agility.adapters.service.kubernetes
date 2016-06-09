@@ -1,6 +1,5 @@
 /**
- *              Copyright (c) 2008-2013 ServiceMesh, Incorporated; All Rights Reserved
- *              Copyright (c) 2013-Present Computer Sciences Corporation
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
  */
 
 package com.servicemesh.agility.adapters.service.kubernetes.util;

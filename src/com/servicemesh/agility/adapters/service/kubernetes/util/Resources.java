@@ -1,3 +1,7 @@
+/**
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
+ */
+
 package com.servicemesh.agility.adapters.service.kubernetes.util;
 
 import java.text.MessageFormat;

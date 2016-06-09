@@ -1,3 +1,7 @@
+/**
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
+ */
+
 package com.servicemesh.agility.adapters.service.kubernetes.json;
 
 public class StatusCause
@@ -8,32 +12,32 @@ public class StatusCause
 
     private String reason;
 
-    public String getField ()
+    public String getField()
     {
         return field;
     }
 
-    public void setField (String field)
+    public void setField(String field)
     {
         this.field = field;
     }
 
-    public String getMessage ()
+    public String getMessage()
     {
         return message;
     }
 
-    public void setMessage (String message)
+    public void setMessage(String message)
     {
         this.message = message;
     }
 
-    public String getReason ()
+    public String getReason()
     {
         return reason;
     }
 
-    public void setReason (String reason)
+    public void setReason(String reason)
     {
         this.reason = reason;
     }
@@ -41,6 +45,6 @@ public class StatusCause
     @Override
     public String toString()
     {
-        return "StatusCause [field = "+field+", message = "+message+", reason = "+reason+"]";
+        return "StatusCause [field = " + field + ", message = " + message + ", reason = " + reason + "]";
     }
 }

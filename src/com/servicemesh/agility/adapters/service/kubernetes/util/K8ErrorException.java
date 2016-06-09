@@ -1,6 +1,5 @@
 /**
- *              Copyright (c) 2008-2013 ServiceMesh, Incorporated; All Rights Reserved
- *              Copyright (c) 2013-Present Computer Sciences Corporation
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
  */
 
 package com.servicemesh.agility.adapters.service.kubernetes.util;
@@ -42,11 +41,14 @@ public class K8ErrorException extends RuntimeException
         StringBuilder sb = new StringBuilder();
         sb.append(getClass().getName()).append(": ");
 
-        String msg = this.getLocalizedMessage();
+        String msg = getLocalizedMessage();
         if (msg != null)
+        {
             sb.append(msg);
+        }
 
-        for (K8Error error : _errors) {
+        for (K8Error error : _errors)
+        {
             sb.append(" { ").append(error.toString()).append("}");
         }
         return sb.toString();

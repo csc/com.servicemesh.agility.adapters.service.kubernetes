@@ -1,3 +1,7 @@
+/**
+ *              Copyright (c) 2015-Present Computer Sciences Corporation
+ */
+
 package com.servicemesh.agility.adapters.service.kubernetes;
 
 import java.io.InputStream;
@@ -28,6 +32,7 @@ import com.servicemesh.agility.api.ServiceProviderType;
 import com.servicemesh.agility.api.ValueConstraintType;
 import com.servicemesh.agility.api.Workload;
 import com.servicemesh.agility.sdk.service.msgs.RegistrationRequest;
+import com.servicemesh.agility.sdk.service.msgs.RegistrationResponse;
 import com.servicemesh.agility.sdk.service.spi.IServiceInstance;
 import com.servicemesh.agility.sdk.service.spi.IServiceInstanceLifecycle;
 import com.servicemesh.agility.sdk.service.spi.IServiceProvider;
@@ -598,4 +603,8 @@ public class K8ServiceAdapter extends ServiceAdapter
         return registration;
     }
 
+    @Override
+    public void onRegistration(RegistrationResponse response)
+    {
+    }
 }
