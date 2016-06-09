@@ -1,0 +1,35 @@
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+  <info organisation="com.servicemesh" module="${ant.project.name}" />
+  <publications>
+    <artifact name="${ant.project.name}-${bundle.version}.r${git.revision}.${git.commit}" type="jar" ext="jar" />
+  </publications>
+  <dependencies>
+    <dependency org="com.servicemesh" name="com.servicemesh.agility.api" rev="3.1.0.+" />
+    <dependency org="com.servicemesh" name="com.servicemesh.agility.api.script" rev="1.0.0.+" />
+
+    <!-- Third party dependencies -->
+    <dependency org="com.fasterxml.jackson.core" name="jackson-core" rev="2.7.0"/>
+    <dependency org="com.fasterxml.jackson.core" name="jackson-databind" rev="2.7.0"/>
+    <dependency org="com.fasterxml.jackson.core" name="jackson-annotations" rev="2.7.0"/>
+
+
+    <dependency org="cobertura" name="cobertura" rev="1.9.4.1">
+      <artifact name="cobertura-1.9.4.1" type="zip" ext="zip" />
+    </dependency>
+    <dependency org="log4j" name="log4j" rev="1.2.17">
+      <artifact name="log4j-1.2.17" type="jar" ext="jar" />
+    </dependency>
+    <dependency org="junit" name="junit" rev="4.8.1">
+      <artifact name="junit-4.8.1" type="jar" ext="jar" />
+    </dependency>
+    <dependency org="mockito-all" name="mockito-all" rev="1.9.5-rc1">
+      <artifact name="mockito-all-1.9.5-rc1" type="jar" ext="jar" />
+    </dependency>
+    <dependency org="org.powermock" name="powermock-module-junit4" rev="1.6.4"/>
+    <dependency org="org.powermock" name="powermock-api-mockito" rev="1.6.4"/>
+    <dependency org="osgi" name="osgi" rev="3.8.0.v20120529-1548">
+      <artifact name="osgi-3.8.0.v20120529-1548" type="jar" ext="jar" />
+    </dependency>
+  </dependencies>
+</ivy-module>
+
