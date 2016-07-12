@@ -1,6 +1,6 @@
 # com.servicemesh.agility.adapters.service.kubernetes
 
-Kubernetes (k8s) Service Adapter
+CSC Agility Platform - Service Adaptor for Kubernetes (k8s)
 
 The Kubernetes adapter leverages the [Agility Platform Services SDK] (https://github.com/csc/csc-agility-platform-services-sdk-reference-info) to enable orchestration and deployment of container based applications/services into Kubernetes clusters. The adapter exposes a set of Agility service components corresponding to Kubernetes concepts such as a Docker container, Pod, and load-balancer that that can be integrated into an application blueprint along with other application workloads or services.
 
