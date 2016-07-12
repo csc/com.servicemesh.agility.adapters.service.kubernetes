@@ -102,10 +102,6 @@ public class K8ServiceAdapter extends ServiceAdapter
         k8PodServiceType.setName(K8Constants.K8_POD_SERVICE_TYPE);
         serviceProviderType.getServiceTypes().add(k8PodServiceType);
 
-        Link k8ReplicationControllerType = new Link();
-        k8ReplicationControllerType.setName(K8Constants.K8_REPLICATION_CONTROLLER_SERVICE_TYPE);
-        serviceProviderType.getServiceTypes().add(k8ReplicationControllerType);
-
         Link k8ServiceType = new Link();
         k8ServiceType.setName(K8Constants.K8_SERVICE_SERVICE_TYPE);
         serviceProviderType.getServiceTypes().add(k8ServiceType);
